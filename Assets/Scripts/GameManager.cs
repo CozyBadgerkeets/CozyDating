@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    // 9 endings broken down to roughly 9 CGs
     [SerializeField] public float Interest;
     [SerializeField] public float Favorability;
-    // 9 endings broken down to roughly 9 CGs
 
     // Start is called before the first frame update
 
@@ -20,17 +20,19 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // will probably need as its in other scenes
     }
     
     public void ChangeInterest(float value)
     {
+        // change this value in UNITY Inspector for whatever the option might be
         Interest += value;
         Debug.Log(Interest);
     }
 
     public void changeFavorability(float value)
     {
+        // change this value in UNITY Inspector for whatever the option might be
         Favorability += value;
         Debug.Log(Favorability);
     }

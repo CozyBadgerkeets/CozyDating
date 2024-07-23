@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +18,8 @@ public class BastetSpeechManager : MonoBehaviour
 
     public float textSpeed;
     public int index;
+
+    public GameObject panel;
 
     // Start is called before the first frame update
     void Start()
@@ -86,6 +88,10 @@ public class BastetSpeechManager : MonoBehaviour
             // otherwise deactivates the box
             // change to move on to selection or next scene
             BastetBox.gameObject.SetActive(false);
+            if(panel)
+            {
+                panel.gameObject.SetActive(false);
+            }
         }
     }
 }
